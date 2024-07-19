@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h2>Изменить</h2>
+
+<form th:action="@{/main/edit/{id}(id=${base.getId()})}" th:object="${base}" method="post">
+        <label for="name">Название цели:</label>
+        <input type="text" id="name" th:field="*{title}"/>
+
+        <label for="description">Описание:</label>
+        <input type="text" id="description" th:field="*{description}"/>
+
+        <label>Важность:</label>
+        <div>
+            <input type="radio" value="1" th:field="*{priority}"/> 1
+            <input type="radio" value="2" th:field="*{priority}"/> 2
+            <input type="radio" value="3" th:field="*{priority}"/> 3
+        </div>
+
+        <label for="localdate">Дата и время:</label>
+        <input type="datetime-local" id="localdate" th:field="*{dob}"/>
+
+        <label for="category">Категория:</label>
+        <select id="category" th:field="*{category}">
+            <option value="LIFE">LIFE</option>
+            <option value="WORK">WORK</option>
+            <option value="REST">REST</option>
+            <option value="FAMILY">FAMILY</option>
+            <option value="OTHER">OTHER</option>
+        </select>
+
+        <label for="repeatable">Повторяющаяся:</label>
+        <select id="repeatable" th:field="*{repeatable}">
+            <option value="NEVER">NEVER</option>
+            <option value="HOURS">HOURS</option>
+            <option value="DAY">DAY</option>
+            <option value="WEEK">WEEK</option>
+        </select>
+
+        <fieldset>
+            <legend>Выполнено:</legend>
+            <div>
+                <input type="checkbox" id="active" th:field="*{done}" checked/>
+                <label for="active">да</label>
+            </div>
+        </fieldset>
+
+    <div class="button-group">
+        <button type="submit">Сохранить твои изменения</button>
+    </div>
+</form>
+
+<form th:action="@{/delete/{id}(id=${base.getId()})}" method="post">
+    <div class="button-group">
+        <button type="submit">Удали</button>
+    </div>
+</form>
+
+<form action="/main/all">
+    <div class="button-group">
+        <button>Все твои работы тут</button>
+    </div>
+</form>
+</body>
+</html>

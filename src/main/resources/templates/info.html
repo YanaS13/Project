@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+<h2>Информация</h2>
+
+<div class="task-info">
+  <p>Название: <span th:text="${task.title}"></span></p>
+  <p>Описание: <span th:text="${task.description}"></span></p>
+  <p>Важность: <span th:text="${task.priority}"></span></p>
+  <p>Дата: <span th:text="${task.dob}"></span></p>
+  <p>Категория: <span th:text="${task.category}"></span></p>
+  <p>Выполнено: <span th:text="${task.done}"></span></p>
+  <p>Повторяющаяся: <span th:text="${task.repeatable}"></span></p>
+  <p><a th:href="@{/main/edit/{id}(id=${task.id})}">Редактировать</a></p>
+</div>
+
+</body>
+</html>

@@ -4,11 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="687015cd-02d9-4291-97a4-158a51d6f39e" name="Changes" comment="" />
+    <list default="true" id="3230b5a0-af6b-4d2f-8a7a-ac70ab3c3669" name="Changes" comment="Если б море было водкой">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TaskArchiveRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enums/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enums/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/ArchiveTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/TaskArchive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ArchiveRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ArchiveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TaskArchiveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/all.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -17,27 +55,214 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2jRuVvCSL9NTAbU7rWFbDADMNW7" />
+  <component name="ProjectId" id="2jIRNEvSotMtfeFeSi4dcDyseuq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ярик\Desktop\project\src\main\resources\templates" />
+      <recent name="C:\Users\Ярик\Desktop\project\src\main\resources\templates\user" />
+      <recent name="C:\Users\Ярик\Desktop\project\src\main\resources\templates\bases" />
+      <recent name="C:\Users\Ярик\Desktop\project\src\main\resources\templates\" />
+      <recent name="C:\Users\Ярик\Desktop\project\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="springbootsecurityrest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="687015cd-02d9-4291-97a4-158a51d6f39e" name="Changes" comment="" />
-      <created>1721362240112</created>
+      <changelist id="3230b5a0-af6b-4d2f-8a7a-ac70ab3c3669" name="Changes" comment="" />
+      <created>1721072564074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721362240112</updated>
+      <updated>1721072564074</updated>
     </task>
+    <task id="LOCAL-00001" summary="first spawn">
+      <created>1721073130135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721073130135</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first spawn">
+      <created>1721073145923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721073145923</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first spawn">
+      <created>1721078296889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721078296889</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first spawn">
+      <created>1721132760238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721132760238</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first spawn">
+      <created>1721133187169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721133187169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="first spawn">
+      <created>1721145172056</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721145172056</updated>
+    </task>
+    <task id="LOCAL-00007" summary="second">
+      <created>1721162077484</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721162077484</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tree">
+      <created>1721164048612</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721164048612</updated>
+    </task>
+    <task id="LOCAL-00009" summary="tree">
+      <created>1721165959349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721165959349</updated>
+    </task>
+    <task id="LOCAL-00010" summary="for">
+      <created>1721217708693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721217708693</updated>
+    </task>
+    <task id="LOCAL-00011" summary="five5">
+      <created>1721240236410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721240236410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="six6">
+      <created>1721250505760</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721250505760</updated>
+    </task>
+    <task id="LOCAL-00013" summary="six6 fix">
+      <created>1721251604584</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721251604584</updated>
+    </task>
+    <task id="LOCAL-00014" summary="six6 fix">
+      <created>1721297579010</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721297579010</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Семь блинк">
+      <created>1721304049864</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721304049864</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Восемь етишина жихнь">
+      <created>1721321179351</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721321179351</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Восемь етишина жихнь СДЕЛАЛ ФРОНТ И ЭНД">
+      <created>1721323775028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721323775028</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Если б море было водкой">
+      <created>1721336864203</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721336864203</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first spawn" />
+    <MESSAGE value="second" />
+    <MESSAGE value="tree" />
+    <MESSAGE value="for" />
+    <MESSAGE value="five5" />
+    <MESSAGE value="six6" />
+    <MESSAGE value="six6 fix" />
+    <MESSAGE value="Семь блинк" />
+    <MESSAGE value="Восемь етишина жихнь" />
+    <MESSAGE value="Восемь етишина жихнь СДЕЛАЛ ФРОНТ И ЭНД" />
+    <MESSAGE value="Если б море было" />
+    <MESSAGE value="Если б море было водкой" />
+    <option name="LAST_COMMIT_MESSAGE" value="Если б море было водкой" />
   </component>
 </project>
