@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My</title>
+</head>
+<body>
+
+<form th:object="${base}" action="/main" method="post">
+    <label for="name">Название цели:</label>
+    <input type="text" id="name" th:field="*{title}"/>
+
+    <label for="description">Описание:</label>
+    <input type="text" id="description" th:field="*{description}"/>
+
+    <label>Важность:</label>
+        <input type="radio" value="1" th:field="*{priority}"/> 1
+        <input type="radio" value="2" th:field="*{priority}"/> 2
+        <input type="radio" value="3" th:field="*{priority}"/> 3
+
+    <label for="localdate">Дата и время:</label>
+    <input type="datetime-local" id="localdate" th:field="*{dob}"/>
+
+    <label for="category">Категория:</label>
+    <select id="category" th:field="*{category}">
+        <option value="LIFE">LIFE</option>
+        <option value="WORK">WORK</option>
+        <option value="REST">REST</option>
+        <option value="FAMILY">FAMILY</option>
+        <option value="OTHER">OTHER</option>
+    </select>
+
+    <label for="repeatable">Повторяющаяся:</label>
+    <select id="repeatable" th:field="*{repeatable}">
+        <option value="NEVER">NEVER</option>
+        <option value="HOURS">HOURS</option>
+        <option value="DAY">DAY</option>
+        <option value="WEEK">WEEK</option>
+    </select>
+
+    <fieldset>
+        <legend>Выполнено:</legend>
+        <div>
+            <input type="checkbox" id="active" th:field="*{done}" checked/>
+            <label for="active">да</label>
+        </div>
+    </fieldset>
+
+    <button type="submit">Добавить план</button>
+</form>
+
+<form action="/main/all">
+    <button>Все твои работы тут</button>
+</form>
+</body>
+</html>

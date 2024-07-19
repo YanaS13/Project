@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<h1>To do list</h1><hr>
+<h4>Доступные задачи</h4>
+
+<table>
+    <thead>
+    <tr>
+        <th> Название </th>
+        <th> Описание </th>
+        <th> Приоритет </th>
+        <th> Срок</th>
+        <th> Статус</th>
+        <th> Категория</th>
+        <th> Повторение</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="all : ${all} " method="post">
+        <td><span th:text="${all.title}"> Название </span></td>
+        <td><span th:text="${all.description}"> Описание </span></td>
+        <td><span th:text="${all.priority}"> Приоритет </span></td>
+        <td><span th:text="${all.dob}"> Срок </span></td>
+        <td><span th:if="${all.done}"> Выполнено </span></td>
+        <td><span th:text="${all.category}"> Категория </span></td>
+        <td><span th:text="${all.repeatable}"> Повторение </span></td>
+        <td><a th:href="@{/main/delete/{id}(id=${all.getId()})}"><input type="submit" value="Удалить "/></a></td>
+        <td><form th:action="@{/all/doneTask/{id}(id=${all.id})}" method="get">
+            <input type="submit" value="Выполнено"/>
+        </form></td>
+        <td><a th:href="@{/main/{id}(id=${all.id})}">Подробнее </a> </td>
+        <td><a th:href="@{/archive/{id}(id=${all.id})}">Архивировать задачу</a><td>
+    <tr th:each="archive : ${archive}">
+        <td><span th:text="${archive.title}"> Название </span></td>
+        <td><span th:text="${archive.description}"> Описание </span></td>
+        <td><span th:text="${archive.priority}"> Приоритет </span></td>
+        <td><span th:text="${archive.dob}"> Срок </span></td>-->
+        <td><span th:if="${archive.done}"> Выполнено </span></td>
+        <td><span th:text="${archive.category}"> Категория </span></td>
+        <td><span th:text="${archive.repeatable}"> Повторение </span></td>
+        <td><a th:href="@{/main/delete/{id}(id=${archive.getId()})}"><input type="submit" value="Удалить "/></a></td>
+        <input type="submit" value="Выполнено"/></form></td>
+    </tr>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<form action="/main/all/forName">
+    <label for="search">Поиск по словам</label>
+    <input name="search" type="text" id="search">
+    <input type="submit" value="Поиск"/>
+</form>
+
+<form action="/main/all/forTime">
+    <label for="date">По дате поиск</label>
+    <input name="date" type="datetime-local" id="date"/>
+    <input type="submit" value="Поиск"/>
+</form>
+
+<form action="/main/all/completed">
+    <button>Только выполненные</button>
+</form>
+<form action="/main/all/notcompleted">
+    <button>Обратно</button>
+</form>
+<form action="/main/all/all">
+    <button>Показать все задачи</button>
+</form>
+<form action="/main/all/allSort">
+    <button>Показать задачи по важности</button>
+</form>
+
+<form action="/main/all/forCategory">
+    <label for="category">Категория</label>
+    <select name="category" id="category">
+        <option value="LIFE">LIFE</option>
+        <option value="WORK">WORK</option>
+        <option value="REST">REST</option>
+        <option value="FAMILY">FAMILY</option>
+        <option value="OTHER">OTHER</option>
+    </select>
+    <input type="submit" value="Поиск"/>
+</form>
+</body>
+</html>
